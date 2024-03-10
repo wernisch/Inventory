@@ -4,15 +4,16 @@
     ---------------------------------------------------------
 
     example usage:
-    InventoryModule = require(path_to_this)
-    local inventory = InventoryModule.initInventory(player)
+    InventoryModule = require(path_to_this
     local player = {} --you probably have your own player table already
+    local inventory = InventoryModule.initInventory(player)
 
     inventory:addItem("ItemName", "ItemDescription", amount)
     ↓↓↓
     inventory:addItem("Sword", "A Sharp Sword", 1)
 
     local items = inventory:displayInventory() --returns the inventory table
+    ↓↓↓
     (
         player = {
             {} = {
